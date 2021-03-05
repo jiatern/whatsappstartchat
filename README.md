@@ -6,7 +6,7 @@ Simple enter the full phone number with country code e.g. 60123456789.
 
 You can drag and drop the bookmarklet below to your Bookmark bar to save it.
 
-[![WA](https://i.imgur.com/g3thKWA.png)](javascript: { var val= prompt("Enter phone number","");} { var openChat = phone => {   const link = document.createElement("a");   link.setAttribute("href", `whatsapp://send?phone=${phone}`); document.body.append(link); link.click();   document.body.removeChild(link); }; } if (val) openChat(val))
+[<img src="https://i.imgur.com/g3thKWA.png">](javascript: { var val= prompt("Enter phone number","");} { var openChat = phone => {   const link = document.createElement("a");   link.setAttribute("href", `whatsapp://send?phone=${phone}`); document.body.append(link); link.click();   document.body.removeChild(link); }; } if (val) openChat(val))
 
 or you can manually add the following code as a bookmark:
 
