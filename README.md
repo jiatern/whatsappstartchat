@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+## WhatsappStartChat Bookmarklet
 
-You can use the [editor on GitHub](https://github.com/jiatern/whatsappstartchat/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+This bookmarklet allows you to start chatting with any number in Whatsapp without adding it as a contact. A pop up will appear when you click it with Whatsapp Web open.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Simple enter the full phone number with country code e.g. 60123456789.
 
-### Markdown
+You can drag and drop the bookmarklet below to your Bookmark bar to save it.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[![WA](https://i.imgur.com/g3thKWA.png)](javascript: { var val= prompt("Enter phone number","");} { var openChat = phone => {   const link = document.createElement("a");   link.setAttribute("href", `whatsapp://send?phone=${phone}`); document.body.append(link); link.click();   document.body.removeChild(link); }; } if (val) openChat(val))
 
-```markdown
-Syntax highlighted code block
+or you can manually add the following code as a bookmark:
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jiatern/whatsappstartchat/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+javascript: { var val= prompt("Enter phone number","");} { var openChat = phone => {   const link = document.createElement("a");   link.setAttribute("href", `whatsapp://send?phone=${phone}`); document.body.append(link); link.click();   document.body.removeChild(link); }; } if (val) openChat(val))
+```
